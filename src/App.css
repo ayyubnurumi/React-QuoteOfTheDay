@@ -1,38 +1,67 @@
+@font-face {
+  font-family: GoldenGraph ;
+  src: url(GoldenGraph.woff2);
+}
+
 .App {
+  background-color: #2e1a35;
+  width: auto;
+  min-height: 100vh;
+}
+
+button {
+  margin: 0 auto 50px;
+  padding: 0.25rem 0.75rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: transparent;
+  color: #fedada;
+  border: 1px solid #fedada;
+  border-radius: 8px;
+}
+
+button:hover {
+  box-shadow: 0 0 11px 4px #fedada;
+  background: #fedada;
+  color: #2e1a35;
+}
+
+h1 {
+  margin: 1.2rem auto;
+  font-family: GoldenGraph, cursive;
+  font-size: 3.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+blockquote {
+  border-top: 2px solid #fedada;
+  border-bottom: 2px solid #fedada;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 5% 8%;
+  padding: 2%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+small {
+  display: block;
+  font-size: 0.7em;
+  text-align: right;
+  font-style: italic;
+  margin: 10px;
+  padding: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header,
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fedada;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 600px) {
+  h1 {font-size: 2rem;}
+  blockquote {font-size: 1.5rem;} 
 }
