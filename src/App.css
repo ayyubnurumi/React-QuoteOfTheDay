@@ -3,8 +3,13 @@
   src: url(GoldenGraph.woff2);
 }
 
+:root {
+  --primary: #2e1a35;
+  --secondary: #fedada;
+}
+
 .App {
-  background-color: #2e1a35;
+  background-color: var(--primary);
   width: auto;
   min-height: 100vh;
 }
@@ -16,15 +21,15 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   background: transparent;
-  color: #fedada;
-  border: 1px solid #fedada;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
   border-radius: 8px;
 }
 
 button:hover {
-  box-shadow: 0 0 11px 4px #fedada;
-  background: #fedada;
-  color: #2e1a35;
+  box-shadow: 0 0 11px 4px var(--secondary);
+  background: var(--secondary);
+  color: var(--primary);
 }
 
 h1 {
@@ -35,8 +40,8 @@ h1 {
 }
 
 blockquote {
-  border-top: 2px solid #fedada;
-  border-bottom: 2px solid #fedada;
+  border-top: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--secondary);
   font-size: 2rem;
   font-weight: 200;
   margin: 5% 8%;
@@ -58,7 +63,7 @@ small {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #fedada;
+  color: var(--secondary);
 }
 
 @media screen and (max-width: 600px) {
