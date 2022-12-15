@@ -1,5 +1,7 @@
-import axios from "axios";
 import React, { useState, useEffect, useCallback, useMemo } from "react";
+import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun, faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import "./App.css";
 
 function App() {
@@ -25,40 +27,28 @@ function App() {
   }, [fetchData]);
 
   const [current, setCurrent] = useState(0);
+  const [darkMode, setDarkMode] = useState(true);
 
-  const bgData = useMemo(() => [
-    { "--primary": "#191641", "--secondary": "#fafafa" },
-    { "--primary": "#478a90", "--secondary": "#faf8f9" },
-    { "--primary": "#00512e", "--secondary": "#ce9f69" },
-    { "--primary": "#4f326a", "--secondary": "#e3a9c0" },
-    { "--primary": "#9878b7", "--secondary": "#f9edfd" },
-    { "--primary": "#55bab9", "--secondary": "#f7ecde" },
-    { "--primary": "#9dad7f", "--secondary": "#f7f7e8" },
-    { "--primary": "#79d1c3", "--secondary": "#f8fcfb" },
-    { "--primary": "#4f3541", "--secondary": "#ffcbcb" },
-    { "--primary": "#3a5245", "--secondary": "#f0ebce" },
-    { "--primary": "#3b3946", "--secondary": "#f7ccac" },
-    { "--primary": "#874d63", "--secondary": "#f2d388" },
-    { "--primary": "#97bfb4", "--secondary": "#f5eedc" },
-    { "--primary": "#5e5c6b", "--secondary": "#f5cdaa" },
-    { "--primary": "#07081a", "--secondary": "#6e7b8c" },
-    { "--primary": "#635c4c", "--secondary": "#b5a98f" },
-    { "--primary": "#0f3935", "--secondary": "#e19a1c" },
-  ], []);
+  const bgData = useMemo(() => require('./color.json'), []);
 
   useEffect(() => {
     const color = document.querySelector(":root");
-    console.log(bgData[current]);
-    color.style.setProperty("--primary", bgData[current]["--primary"]);
-    color.style.setProperty("--secondary", bgData[current]["--secondary"]);
-  }, [current, bgData]);
+    if (darkMode) {
+      color.style.setProperty("--primary",  bgData[current]["--primary"]);
+      color.style.setProperty("--secondary", bgData[current]["--secondary"])
+    } else {
+      color.style.setProperty("--primary",  bgData[current]["--secondary"]);
+      color.style.setProperty("--secondary", bgData[current]["--primary"])
+    }
+  }, [current, bgData, darkMode]);
   
   if (current === bgData.length) setCurrent(0);
 
   return (
     <div className="App">
-      <header className="App-header" onClick={() => setCurrent(current + 1)}>
-        <h1>Quote of the Day</h1>
+      <header className="App-header">
+        <h1 onClick={() => setCurrent(current + 1)}>Quote of the Day</h1>
+        <FontAwesomeIcon className="icon dark-mode" icon={darkMode ? faSun : faMoon} onClick={()=> setDarkMode(!darkMode)}/>
       </header>
       <main>
         {respData && (
@@ -70,7 +60,7 @@ function App() {
           </blockquote>
         )}
       </main>
-      <button onClick={fetchData}>Get Quote</button>
+      <FontAwesomeIcon className="icon" icon={faCircleRight} onClick={fetchData}/>
     </div>
   );
 }
