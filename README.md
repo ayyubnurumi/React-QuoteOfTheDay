@@ -1,6 +1,8 @@
 # Quote of the Day
 
-Random quote for your moodbbooster. sometimes, it doesn't work 😞.
+Random quote to boost your mood. sometimes, it doesn't work 😞, cuz my only moodbooster is you. 😚🤣
+
+![banner](https://user-images.githubusercontent.com/108327481/208048569-b63675e0-a61f-4cce-b696-b61b9499ce8c.jpg)
 
 ## 🎯 About
 
@@ -65,3 +67,11 @@ REACT_APP_API_KEY= "your-React-App-API-key"
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 <br/>
+
+## Screenshots
+
+![ss-dark-1](https://user-images.githubusercontent.com/108327481/208048931-9d777100-1ebb-4d28-809d-94790b1c880b.jpg)
+
+![ss-light](https://user-images.githubusercontent.com/108327481/208048972-cd09b5b0-0665-4c15-bee0-6f2fd8f8a2cc.jpg)
+
+![ss-dark-2](https://user-images.githubusercontent.com/108327481/208049032-0463903d-be29-4d62-855c-c886e9e5e90e.jpg)
