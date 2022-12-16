@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Quote of the Day
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Random quote for your moodbbooster. sometimes, it doesn't work 😞.
 
-## Available Scripts
+## 🎯 About
 
-In the project directory, you can run:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I have started this project with the purpose of learning how to fecth data from an API with React Hooks. i've also inserted a background changer for the sake of better understanding on react hooks.<br/>
+I haven't deployed this project yet, so no demo yet. fortunately, this project can be run locally. follow the steps below.<br/>
+Go try it and please let me know if you enjoyed it with a ⭐️, I would appreciate it a lot.<br/>
 
-### `npm start`
+## :sparkles: Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+:heavy_check_mark: &nbsp;&nbsp;Gernerate a quote randomly, also originator of the quote<br/>
+:heavy_check_mark: &nbsp;&nbsp;background color changer<br/>
+:heavy_check_mark: &nbsp;&nbsp;dark-mode button<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :rocket: Technologies
 
-### `npm test`
+- [RapidAPI's Quotes](https://rapidapi.com/martin.svoboda/api/quotes15)
+- [React](https://reactjs.org/)
+- [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :question_mark: More Info
 
-### `npm run build`
+- 📝 In case, you wanna re-create it step-by-step, follow this [tutorial from RapidApi.](https://rapidapi.com/blog/react-hooks-fetch-data-api/)
+- 🎨 colors inspo from [Zayn' Instagram](https://www.instagram.com/kemponqq/)
+- 🔡 Font: [Golden Graph](https://bit.ly/goldengraph)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 👨🏻‍💻 Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  git clone https://github.com/Th3Wall/Fakeflix
+```
 
-### `npm run eject`
+- Go to the project directory
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+  cd fakeflix
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+  npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Create a .env file
 
-## Learn More
+- Request an API key from RapidAPI and then add it to the .env file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+REACT_APP_API_KEY= "your-React-App-API-key"
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Start the server
 
-### Code Splitting
+```bash
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## :white_check_mark: Requirements
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+<br/>
