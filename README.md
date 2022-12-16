@@ -21,11 +21,11 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [FontAwesome,s Icons](https://fontawesome.com/)
 
-## :yellow_question_mark: More Info
+## ❔ More Info
 
-- 📝 In case, you wanna re-create it step-by-step, follow this [tutorial from RapidApi.](https://rapidapi.com/blog/react-hooks-fetch-data-api/)
-- 🎨 colors inspo from [Zayn' Instagram](https://www.instagram.com/kemponqq/)
-- 🔡 Font: [Golden Graph](https://bit.ly/goldengraph)
+📝 &nbsp;&nbsp;In case, you wanna re-create it step-by-step, follow this [tutorial from RapidApi.](https://rapidapi.com/blog/react-hooks-fetch-data-api/)
+🎨 &nbsp;&nbsp;colors inspo from [Zayn' Instagram](https://www.instagram.com/kemponqq/)
+🔡 &nbsp;&nbsp;Font: [Golden Graph](https://bit.ly/goldengraph)
 
 ## 👨🏻‍💻 Run Locally
 
