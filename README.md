@@ -23,9 +23,9 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 
 ## ❔ More Info
 
-📝 &nbsp;&nbsp;In case, you wanna re-create it step-by-step, follow this [tutorial from RapidApi.](https://rapidapi.com/blog/react-hooks-fetch-data-api/)
-🎨 &nbsp;&nbsp;colors inspo from [Zayn' Instagram](https://www.instagram.com/kemponqq/)
-🔡 &nbsp;&nbsp;Font: [Golden Graph](https://bit.ly/goldengraph)
+📝 &nbsp;&nbsp;In case, you wanna re-create it step-by-step, follow this [tutorial from RapidApi.](https://rapidapi.com/blog/react-hooks-fetch-data-api/)<br/>
+🎨 &nbsp;&nbsp;colors inspo from [Zayn' Instagram.](https://www.instagram.com/kemponqq/)<br/>
+🔡 &nbsp;&nbsp;Font: [Golden Graph.](https://bit.ly/goldengraph)<br/>
 
 ## 👨🏻‍💻 Run Locally
 
