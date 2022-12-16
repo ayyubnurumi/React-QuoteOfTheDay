@@ -19,6 +19,7 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - [RapidAPI's Quotes](https://rapidapi.com/martin.svoboda/api/quotes15)
 - [React](https://reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [FontAwesome,s Icons](https://fontawesome.com/)
 
 ## :question_mark: More Info
 
@@ -31,13 +32,13 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - Clone the project
 
 ```bash
-  git clone https://github.com/Th3Wall/Fakeflix
+  git clone https://github.com/ayyubnurumi/React-app-QuoteOfTheDay.git
 ```
 
 - Go to the project directory
 
 ```bash
-  cd fakeflix
+  cd React-app-QuoteOfTheDay
 ```
 
 - Install dependencies
