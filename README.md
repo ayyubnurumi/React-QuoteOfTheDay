@@ -1,6 +1,6 @@
 # Quote of the Day
 
-Random quote for your moodbbooster. sometimes, it doesn't work 😞.
+Random quote to boost your mood. sometimes, it doesn't work 😞, cuz my only moodbooster is you. 😚🤣
 
 ## 🎯 About
 
