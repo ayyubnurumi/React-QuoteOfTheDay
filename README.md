@@ -21,6 +21,7 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - [RapidAPI's Quotes](https://rapidapi.com/martin.svoboda/api/quotes15)
 - [React](https://reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Axios](https://axios-http.com/docs/intro)
 - [FontAwesome,s Icons](https://fontawesome.com/)
 
 ## ❔ More Info
