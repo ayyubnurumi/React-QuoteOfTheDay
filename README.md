@@ -22,7 +22,7 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - [React](https://reactjs.org/)
 - [React Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Axios](https://axios-http.com/docs/intro)
-- [FontAwesome,s Icons](https://fontawesome.com/)
+- [FontAwesome's Icons](https://fontawesome.com/)
 
 ## ❔ More Info
 
@@ -35,13 +35,13 @@ Go try it and please let me know if you enjoyed it with a ⭐️, I would apprec
 - Clone the project
 
 ```bash
-  git clone https://github.com/ayyubnurumi/React-app-QuoteOfTheDay.git
+  git clone https://github.com/ayyubnurumi/React-QuoteOfTheDay.git
 ```
 
 - Go to the project directory
 
 ```bash
-  cd React-app-QuoteOfTheDay
+  cd React-QuoteOfTheDay
 ```
 
 - Install dependencies
