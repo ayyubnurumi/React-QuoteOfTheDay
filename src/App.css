@@ -10,8 +10,22 @@
 
 .App {
   background-color: var(--primary);
-  width: auto;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.App-header {
+  width: inherit;
+  position: relative;
+}
+
+.App-header,
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
 }
 
 .icon {
@@ -27,10 +41,8 @@
 }
 
 h1 {
-  margin: 2.1rem auto 1.2rem;
   font-family: GoldenGraph, cursive;
-  font-size: 3.5rem;
-  text-align: center;
+  font-size: 3.3rem;
   cursor: pointer;
 }
 
@@ -50,15 +62,6 @@ small {
   font-style: italic;
   margin: 10px;
   padding: 4px;
-}
-
-.App-header,
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary);
 }
 
 @media screen and (max-width: 600px) {

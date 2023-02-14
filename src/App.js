@@ -10,6 +10,7 @@ import "./App.css";
 
 function App() {
   const [respData, setRespData] = useState("");
+  const [fontSize, setFontSize] = useState("2rem");
 
   const fetchData = useCallback(() => {
     axios({
@@ -18,11 +19,35 @@ function App() {
       headers: {
         "content-type": "application/octet-stream",
         "X-RapidAPI-Host": "quotes15.p.rapidapi.com",
-        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
+        "X-RapidAPI-Key": "019e944ee4msh70e85fad7eb8698p12768ejsn296e8fd27432",
       },
       params: { language_code: "en" },
     })
-      .then((response) => setRespData(response.data))
+      .then((response) => {
+        setRespData(response.data);
+        if (response.data.content.length > 150) {
+          setFontSize("1.75rem");
+          if (response.data.content.length > 250) {
+            setFontSize("1.4rem");
+            if (response.data.content.length > 350) {
+              setFontSize("1.1rem");
+              if (response.data.content.length > 450) {
+                setFontSize("0.9rem");
+                if (response.data.content.length > 550) {
+                  setFontSize("0.7rem");
+                  if (response.data.content.length > 650) {
+                    setFontSize("0.5rem");
+                  }
+                }
+              }
+            }
+          }
+        } else if (response.data.content.length < 75) {
+          setFontSize("2.5rem");
+        } else {
+          setFontSize("2rem");
+        }
+      })
       .catch((error) => console.log(error));
   }, []);
 
@@ -50,7 +75,6 @@ function App() {
 
   if (current === bgData.length) setCurrent(0);
 
-
   return (
     <div className="App">
       <header className="App-header">
@@ -66,7 +90,7 @@ function App() {
       </header>
       <main>
         {respData && (
-          <blockquote>
+          <blockquote style={{ fontSize: fontSize }}>
             "{respData && respData.content}"
             <small>
               {respData && respData.originator && respData.originator.name}
