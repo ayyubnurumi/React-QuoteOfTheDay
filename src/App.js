@@ -38,15 +38,15 @@ function App() {
                   if (response.data.content.length > 400) {
                     setFontSize("1rem");
                     if (response.data.content.length > 450) {
-                      setFontSize("0.85rem");
+                      setFontSize("0.9rem");
                       if (response.data.content.length > 500) {
-                        setFontSize("0.6rem");
+                        setFontSize("0.8rem");
                         if (response.data.content.length > 550) {
-                          setFontSize("0.5rem");
+                          setFontSize("0.7rem");
                           if (response.data.content.length > 600) {
-                            setFontSize("0.4rem");
+                            setFontSize("0.5rem");
                             if (response.data.content.length > 650) {
-                              setFontSize("0.3rem");
+                              setFontSize("0.4rem");
                             }
                           }
                         }
