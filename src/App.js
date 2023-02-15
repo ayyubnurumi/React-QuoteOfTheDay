@@ -27,16 +27,31 @@ function App() {
         setRespData(response.data);
         if (response.data.content.length > 150) {
           setFontSize("1.75rem");
-          if (response.data.content.length > 250) {
-            setFontSize("1.4rem");
-            if (response.data.content.length > 350) {
-              setFontSize("1.1rem");
-              if (response.data.content.length > 450) {
-                setFontSize("0.9rem");
-                if (response.data.content.length > 550) {
-                  setFontSize("0.7rem");
-                  if (response.data.content.length > 650) {
-                    setFontSize("0.5rem");
+          if (response.data.content.length > 200) {
+            setFontSize("1.6rem");
+            if (response.data.content.length > 250) {
+              setFontSize("1.45rem");
+              if (response.data.content.length > 300) {
+                setFontSize("1.3rem");
+                if (response.data.content.length > 350) {
+                  setFontSize("1.15rem");
+                  if (response.data.content.length > 400) {
+                    setFontSize("1rem");
+                    if (response.data.content.length > 450) {
+                      setFontSize("0.85rem");
+                      if (response.data.content.length > 500) {
+                        setFontSize("0.6rem");
+                        if (response.data.content.length > 550) {
+                          setFontSize("0.5rem");
+                          if (response.data.content.length > 600) {
+                            setFontSize("0.4rem");
+                            if (response.data.content.length > 650) {
+                              setFontSize("0.3rem");
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
