@@ -19,7 +19,7 @@ function App() {
       headers: {
         "content-type": "application/octet-stream",
         "X-RapidAPI-Host": "quotes15.p.rapidapi.com",
-        "X-RapidAPI-Key": "019e944ee4msh70e85fad7eb8698p12768ejsn296e8fd27432",
+        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       },
       params: { language_code: "en" },
     })
