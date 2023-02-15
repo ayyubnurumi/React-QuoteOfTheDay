@@ -6,7 +6,7 @@ import {
   faSun,
   faCircleRight,
 } from "@fortawesome/free-regular-svg-icons";
-import "./App.css";
+import "./index.css";
 
 function App() {
   const [respData, setRespData] = useState("");
