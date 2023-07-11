@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,7 +24,7 @@ code {
 
 .App {
   background-color: var(--primary);
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -59,13 +60,17 @@ h1 {
   cursor: pointer;
 }
 
-blockquote {
+main {
+  width: 100vh;
+}
+
+.blockquote {
   border-top: 2px solid var(--secondary);
   border-bottom: 2px solid var(--secondary);
-  font-size: 2rem;
   font-weight: 200;
-  margin: 4% 8%;
+  margin: 4% 0;
   padding: 2%;
+  max-height: 40vh;
 }
 
 small {
@@ -79,5 +84,4 @@ small {
 
 @media screen and (max-width: 600px) {
   h1 {font-size: 2rem;}
-  blockquote {font-size: 1.5rem;}
 }
