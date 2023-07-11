@@ -6,8 +6,8 @@ Random quote to boost your mood. sometimes, it doesn't work 😞, cuz my only mo
 
 ## 🎯 About
 
+Check it out [quoteofthedayay.vercel.app](https://quoteofthedayay.vercel.app). This project can be run locally. follow the steps below.<br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I have started this project with the purpose of learning how to fecth data from an API with React Hooks. i've also inserted a background changer for the sake of better understanding on react hooks.<br/>
-I haven't deployed this project yet, so no demo yet. fortunately, this project can be run locally. follow the steps below.<br/>
 Go try it and please let me know if you enjoyed it with a ⭐️, I would appreciate it a lot.<br/>
 
 ## :sparkles: Features
