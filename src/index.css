@@ -64,7 +64,7 @@ main {
   width: 100vh;
 }
 
-.blockquote {
+blockquote {
   border-top: 2px solid var(--secondary);
   border-bottom: 2px solid var(--secondary);
   font-weight: 200;
