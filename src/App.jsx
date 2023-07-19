@@ -10,7 +10,7 @@ import "./index.css";
 
 function App() {
   const [respData, setRespData] = useState("");
-  const [fontSize, setFontSize] = useState("2rem");
+  const [fontSize, setFontSize] = useState("2.5rem");
 
   const fetchData = useCallback(() => {
     axios({
@@ -25,43 +25,11 @@ function App() {
     })
       .then((response) => {
         setRespData(response.data);
-        if (response.data.content.length > 150) {
-          setFontSize("1.75rem");
-          if (response.data.content.length > 200) {
-            setFontSize("1.6rem");
-            if (response.data.content.length > 250) {
-              setFontSize("1.45rem");
-              if (response.data.content.length > 300) {
-                setFontSize("1.3rem");
-                if (response.data.content.length > 350) {
-                  setFontSize("1.15rem");
-                  if (response.data.content.length > 400) {
-                    setFontSize("1rem");
-                    if (response.data.content.length > 450) {
-                      setFontSize("0.9rem");
-                      if (response.data.content.length > 500) {
-                        setFontSize("0.8rem");
-                        if (response.data.content.length > 550) {
-                          setFontSize("0.7rem");
-                          if (response.data.content.length > 600) {
-                            setFontSize("0.5rem");
-                            if (response.data.content.length > 650) {
-                              setFontSize("0.4rem");
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        } else if (response.data.content.length < 75) {
-          setFontSize("2.5rem");
-        } else {
-          setFontSize("2rem");
+        let fs = 2.5;
+        for (let i = 0; i < response.data.content.length; i++) {
+          fs -= 0.002;
         }
+        setFontSize(fs+"rem")
       })
       .catch((error) => console.log(error));
   }, []);
@@ -90,8 +58,6 @@ function App() {
 
   if (current === bgData.length) setCurrent(0);
 
-  // console.log(process.env.REACT_APP_API_KEY);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -107,7 +73,7 @@ function App() {
       </header>
       <main>
         {respData && (
-          <blockquote style={{ fontSize: fontSize }}>
+          <blockquote style={{fontSize: fontSize}}>
             "{respData && respData.content}"
             <small>
               {respData && respData.originator && respData.originator.name}
